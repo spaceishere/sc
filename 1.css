@@ -55,23 +55,27 @@ padding-top: 10px;
     margin-left: 250px;
     color: white;
     font-style: italic;
-    opacity: 0;
+    /* opacity: 0; */
+
+    width: 120px;
 }
 .text-2{
     font-size: 35px;
     margin-left: 250px;
     color: white;
     font-style: italic;
-    opacity: 0;
+    /* opacity: 0; */
 
+    width: 170px;
 }
 .text-3{
     font-size: 35px;
     margin-left: 250px;
     color: white;
     font-style: italic;
-    opacity: 0;
+    /* opacity: 0; */
 
+    width: 140px;
 }
 
 
@@ -98,3 +102,5 @@ padding-top: 10px;
     transition: 6s;
     opacity: 1;
 }
+
+
