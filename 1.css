@@ -1,29 +1,23 @@
 body {
     margin: 0;
 }
-.back{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(224, 191, 241);
-    margin-top: -1200px;
-    margin-left: 500px;
-    height: 1200px;
-    width: 76vw;
+
+.list {
+    background-color: rgb(185, 136, 185);
+    width: 500px;
+    height: 1140px;
+    margin-top: -40px;
 }
-.list{
- background-color: rgb(185, 136, 185);
- width: 500px;
- height: 100vh;
- margin-top: -40px;
+
+.hamburger-menu {
+    width: 100px;
+    margin-top: 40px;
+    padding-top: 10px;
+    position: absolute;
 }
-.hamburger-menu{
-width: 100px;
-margin-top: 40px;
-padding-top: 10px;
-position: absolute  ;
-}
+
 .bar {
-    
+
     width: 35px;
     height: 5px;
     background-color: #fff;
@@ -41,13 +35,14 @@ position: absolute  ;
     width: 30px;
     box-shadow: 0px 5px 50px 5px grey;
 }
+
 .hamburger-menu:hover .midlle {
     transform: translateX(6px);
     transition: 1s;
     background-color: red;
     width: 52px;
-    transform: translateX(20px) ;
-    
+    transform: translateX(20px);
+
 }
 
 .hamburger-menu:hover .bottom {
@@ -56,46 +51,12 @@ position: absolute  ;
     transition: 1s;
     width: 30px;
 }
-.haha{
-    background-color:rgb(185, 136, 185);
-}
-.text-1{
-    font-size: 35px;
-    margin-left: 150px;
-    color: white;
-    font-style: italic;
-    opacity: 1;
 
-    width: 120px;
+.haha {
+    background-color: rgb(185, 136, 185);
 }
-.text-2{
-    font-size: 35px;
-    margin-left: 150px;
-    color: white;
-    font-style: italic;
-    opacity: 1;
 
-    width: 120px;
-}
-.text-3{
-    font-size: 35px;
-    margin-left: 150px;
-    color: white;
-    font-style: italic;
-    opacity: 1;
-
-    width: 120px;
-}
-.text-4{
-    font-size: 35px;
-    margin-left: 150px;
-    color: white;
-    font-style: italic;
-    opacity: 1;
-
-    width: 120px;
-}
-.text-5{
+.text-1 {
     font-size: 35px;
     margin-left: 150px;
     color: white;
@@ -105,46 +66,88 @@ position: absolute  ;
     width: 120px;
 }
 
+.text-2 {
+    font-size: 35px;
+    margin-left: 150px;
+    color: white;
+    font-style: italic;
+    opacity: 1;
 
-.hamburger-menu:hover + .text .text-1    {
+    width: 120px;
+}
+
+.text-3 {
+    font-size: 35px;
+    margin-left: 150px;
+    color: white;
+    font-style: italic;
+    opacity: 1;
+
+    width: 120px;
+}
+
+.text-4 {
+    font-size: 35px;
+    margin-left: 150px;
+    color: white;
+    font-style: italic;
+    opacity: 1;
+
+    width: 120px;
+}
+
+.text-5 {
+    font-size: 35px;
+    margin-left: 150px;
+    color: white;
+    font-style: italic;
+    opacity: 1;
+
+    width: 120px;
+}
+
+
+.hamburger-menu:hover+.text .text-1 {
     display: flex;
     flex-direction: column;
-    transform:translateX(-100px);
+    transform: translateX(-100px);
     transition: 1s;
     opacity: 1;
 }
 
-.hamburger-menu:hover + .text .text-2    {
+.hamburger-menu:hover+.text .text-2 {
     display: flex;
     flex-direction: column;
-    transform:translateX(-100px);
+    transform: translateX(-100px);
     transition: 2s;
     opacity: 1;
 }
 
-.hamburger-menu:hover + .text .text-3    {
+.hamburger-menu:hover+.text .text-3 {
     display: flex;
     flex-direction: column;
-    transform:translateX(-100px);
+    transform: translateX(-100px);
     transition: 3s;
     opacity: 1;
 }
-.hamburger-menu:hover + .text .text-4    {
+
+.hamburger-menu:hover+.text .text-4 {
     display: flex;
     flex-direction: column;
-    transform:translateX(-100px);
+    transform: translateX(-100px);
     transition: 4s;
     opacity: 1;
 }
-.hamburger-menu:hover + .text .text-5    {
+
+.hamburger-menu:hover+.text .text-5 {
     display: flex;
     flex-direction: column;
-    transform:translateX(-100px);
+    transform: translateX(-100px);
     transition: 5s;
     opacity: 1;
 }
-div.container
-{
+
+div.container {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -152,24 +155,24 @@ div.container
     text-align: center;
 }
 
-div.container a
-{
+div.container a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font: 30px;
     margin: 0px 10px;
     padding: 10px 10px;
-    position:relative;
+    position: relative;
     z-index: 0;
     cursor: pointer;
 }
-.bc
-{
+
+.bc {
     background: rgb(185, 136, 185);
 }
-div.trans a:before, div.trans a:after
-{
-    position:absolute;
+
+div.trans a:before,
+div.trans a:after {
+    position: absolute;
     opacity: 0.5;
     height: 2px;
     width: 100%;
@@ -178,21 +181,70 @@ div.trans a:before, div.trans a:after
     transition: all 0.3s;
 }
 
-div.trans a::after
-{
+div.trans a::after {
     left: 0px;
     top: 0px;
 }
 
-div.trans a:before
-{
+div.trans a:before {
     right: 0px;
     bottom: 0px;
 }
 
-div.trans a:hover:after, div.trans a:hover:before
-{
+div.trans a:hover:after,
+div.trans a:hover:before {
     opacity: 0.1;
     height: 100%;
     width: 100%;
+}
+
+.grid-container {
+    /* background-color:red ;
+    position: absolute;
+    margin-left: 500px;
+    height: 1140px;
+    margin-top:-1140px; */
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 50% 20%;
+    justify-content: center;
+    background-color: pink;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 40% 20% 40%;
+}
+
+.back {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-column {
+
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.grid-item-right {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 60% 0%;
+}
+
+.grid-2,
+.grid-right {
+    border: 1px black solid;
+    background-color: aqua;
 }
