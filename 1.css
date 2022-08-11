@@ -20,9 +20,10 @@ body {
 width: 100px;
 margin-top: 40px;
 padding-top: 10px;
+position: absolute  ;
 }
 .bar {
-   
+    
     width: 35px;
     height: 5px;
     background-color: #fff;
@@ -46,7 +47,7 @@ padding-top: 10px;
     background-color: red;
     width: 52px;
     transform: translateX(20px) ;
-
+    
 }
 
 .hamburger-menu:hover .bottom {
@@ -56,12 +57,98 @@ padding-top: 10px;
     width: 30px;
 }
 .haha{
-    background-color:rgb(224, 191, 241);
+    background-color:rgb(185, 136, 185);
+}
+.text-1{
+    font-size: 35px;
+    margin-left: 150px;
+    color: white;
+    font-style: italic;
+    opacity: 1;
+
+    width: 120px;
+}
+.text-2{
+    font-size: 35px;
+    margin-left: 150px;
+    color: white;
+    font-style: italic;
+    opacity: 1;
+
+    width: 120px;
+}
+.text-3{
+    font-size: 35px;
+    margin-left: 150px;
+    color: white;
+    font-style: italic;
+    opacity: 1;
+
+    width: 120px;
+}
+.text-4{
+    font-size: 35px;
+    margin-left: 150px;
+    color: white;
+    font-style: italic;
+    opacity: 1;
+
+    width: 120px;
+}
+.text-5{
+    font-size: 35px;
+    margin-left: 150px;
+    color: white;
+    font-style: italic;
+    opacity: 1;
+
+    width: 120px;
+}
+
+
+.hamburger-menu:hover + .text .text-1    {
+    display: flex;
+    flex-direction: column;
+    transform:translateX(-100px);
+    transition: 1s;
+    opacity: 1;
+}
+
+.hamburger-menu:hover + .text .text-2    {
+    display: flex;
+    flex-direction: column;
+    transform:translateX(-100px);
+    transition: 2s;
+    opacity: 1;
+}
+
+.hamburger-menu:hover + .text .text-3    {
+    display: flex;
+    flex-direction: column;
+    transform:translateX(-100px);
+    transition: 3s;
+    opacity: 1;
+}
+.hamburger-menu:hover + .text .text-4    {
+    display: flex;
+    flex-direction: column;
+    transform:translateX(-100px);
+    transition: 4s;
+    opacity: 1;
+}
+.hamburger-menu:hover + .text .text-5    {
+    display: flex;
+    flex-direction: column;
+    transform:translateX(-100px);
+    transition: 5s;
+    opacity: 1;
 }
 div.container
 {
-    margin-top: 400px;
-    padding: 10em 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10em 10em;
     text-align: center;
 }
 
@@ -78,7 +165,7 @@ div.container a
 }
 .bc
 {
-    background: rgb(224, 191, 241);
+    background: rgb(185, 136, 185);
 }
 div.trans a:before, div.trans a:after
 {
@@ -108,58 +195,4 @@ div.trans a:hover:after, div.trans a:hover:before
     opacity: 0.1;
     height: 100%;
     width: 100%;
-}
-
-
-.text-1{
-    font-size: 35px;
-    margin-left: 250px;
-    color: white;
-    font-style: italic;
-    opacity: 0;
-
-    width: 120px;
-}
-.text-2{
-    font-size: 35px;
-    margin-left: 250px;
-    color: white;
-    font-style: italic;
-    opacity: 0;
-
-    width: 170px;
-}
-.text-3{
-    font-size: 35px;
-    margin-left: 250px;
-    color: white;
-    font-style: italic;
-    opacity: 0;
-
-    width: 140px;
-}
-
-
-.hamburger-menu:hover + .text .text-1    {
-    display: flex;
-    flex-direction: column;
-    transform:translateX(-100px);
-    transition: 2s;
-    opacity: 1;
-}
-
-.hamburger-menu:hover + .text .text-2    {
-    display: flex;
-    flex-direction: column;
-    transform:translateX(-100px);
-    transition: 4s;
-    opacity: 1;
-}
-
-.hamburger-menu:hover + .text .text-3    {
-    display: flex;
-    flex-direction: column;
-    transform:translateX(-100px);
-    transition: 6s;
-    opacity: 1;
 }
