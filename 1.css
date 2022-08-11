@@ -1,10 +1,18 @@
 body {
     margin: 0;
-    background-color:pink;
+}
+.back{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(224, 191, 241);
+    margin-top: -1200px;
+    margin-left: 500px;
+    height: 1200px;
+    width: 76vw;
 }
 .list{
  background-color: rgb(185, 136, 185);
- width: 600px;
+ width: 500px;
  height: 100vh;
  margin-top: -40px;
 }
@@ -43,39 +51,115 @@ padding-top: 10px;
 
 .hamburger-menu:hover .bottom {
     transform: translateY(-6px) rotate(45deg);
-
     background-color: red;
     transition: 1s;
     width: 30px;
 }
-.hamburger-menu:hover {
+.haha{
+    background-color:rgb(224, 191, 241);
+}
+div.container
+{
+    margin-top: 400px;
+    padding: 10em 3em;
+    text-align: center;
+}
 
+div.container a
+{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font: 30px;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position:relative;
+    z-index: 0;
+    cursor: pointer;
 }
-.text{
-    padding-top: 50px;
-    display: none;
+.bc
+{
+    background: rgb(224, 191, 241);
 }
+div.trans a:before, div.trans a:after
+{
+    position:absolute;
+    opacity: 0.5;
+    height: 2px;
+    width: 100%;
+    content: '';
+    background: rgb(0, 0, 0);
+    transition: all 0.3s;
+}
+
+div.trans a::after
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.trans a:before
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.trans a:hover:after, div.trans a:hover:before
+{
+    opacity: 0.1;
+    height: 100%;
+    width: 100%;
+}
+
+
 .text-1{
     font-size: 35px;
     margin-left: 250px;
     color: white;
     font-style: italic;
+    opacity: 0;
+
+    width: 120px;
 }
 .text-2{
     font-size: 35px;
     margin-left: 250px;
     color: white;
     font-style: italic;
+    opacity: 0;
+
+    width: 170px;
 }
 .text-3{
     font-size: 35px;
     margin-left: 250px;
     color: white;
     font-style: italic;
+    opacity: 0;
+
+    width: 140px;
 }
 
 
-.hamburger-menu:hover + .text {
+.hamburger-menu:hover + .text .text-1    {
     display: flex;
     flex-direction: column;
+    transform:translateX(-100px);
+    transition: 2s;
+    opacity: 1;
+}
+
+.hamburger-menu:hover + .text .text-2    {
+    display: flex;
+    flex-direction: column;
+    transform:translateX(-100px);
+    transition: 4s;
+    opacity: 1;
+}
+
+.hamburger-menu:hover + .text .text-3    {
+    display: flex;
+    flex-direction: column;
+    transform:translateX(-100px);
+    transition: 6s;
+    opacity: 1;
 }
